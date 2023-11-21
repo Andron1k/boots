@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript" src="script.js"></script>
+
+<header>
+	<ul type="none">
+		<li><a href="index.html">Головна</a></li>
+		<li><a href="index2.html">Чоловіче</a></li>
+		<li><a href="index3.html">Жіноче</a></li>
+		<li><a href="index4.html">Дитяче</a></li>
+		<li><a href="index5.html">Акції</a></li>
+	</ul>
+</header>
+
+
+<section>
+	 <img id="largeImg" src="./g1/1.webp" alt="Large image">
+  <ol id="thumbs">
+    <li>
+      <a href="./g1/2.webp" title="Image 2"><img src="./g1/2.webp"></a>
+    </li>
+    <li>
+      <a href="./g1/3.webp" title="Image 3"><img src="./g1/3.webp"></a>
+    </li>
+    <li>
+      <a href="./g1/4.webp" title="Image 4"><img src="./g1/4.webp"></a>
+    </li>
+    <li>
+      <a href="./g1/5.webp" title="Image 5"><img src="./g1/5.webp"></a>
+    </li>
+    <li>
+      <a href="./g1/6.webp" title="Image 6"><img src="./g1/6.webp"></a>
+    </li>
+  </ol>
+  <script>
+    thumbs.onclick = function(event) {
+      let thumbnail = event.target.closest('a');
+      if (!thumbnail) return;
+      showThumbnail(thumbnail.href, thumbnail.title);
+      event.preventDefault();
+    }
+    function showThumbnail(href, title) {
+      largeImg.src = href;
+      largeImg.alt = title;
+    }
+  </script>
+
+<h2>Черевики туристичні Jack&Jones</h2>
+
+</section>
+
+
+<footer></footer>
+</body>
+</html>
